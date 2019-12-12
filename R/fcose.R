@@ -39,6 +39,48 @@ layoutBaseDependency <- function() {
   )
 }
 
+#' @title Cola Layout
+#'
+#' @param cytoscape
+#' @param name
+#' @param quality
+#' @param randomize
+#' @param animate
+#' @param animationDuration
+#' @param animationEasing
+#' @param fit
+#' @param padding
+#' @param nodeDimensionsIncludeLabels
+#' @param uniformNodeDimensions
+#' @param packComponents
+#' @param samplingType
+#' @param sampleSize
+#' @param nodeSeparation
+#' @param piTol
+#' @param nodeRepulsion
+#' @param idealEdgeLength
+#' @param edgeElasticity
+#' @param nestingFactor
+#' @param numIter
+#' @param tile
+#' @param tilingPaddingVertical
+#' @param tilingPaddingHorizontal
+#' @param gravity
+#' @param gravityRangeCompound
+#' @param gravityCompound
+#' @param gravityRange
+#' @param initialEnergyOnIncremental
+#' @param ready
+#' @param stop
+#' @param ...
+#'
+#' @importFrom jsonlite toJSON
+#' @importFrom htmlwidgets JS
+#' @return
+#' @export
+#'
+#' @examples
+
 
 fcose_layout <- function(cytoscape,
                          name = 'fcose',
@@ -111,7 +153,7 @@ fcose_layout <- function(cytoscape,
       gravityRangeCompound = gravityRangeCompound,
       gravityCompound = gravityCompound,
       gravityRange = gravityRange,
-      initialEnergyOnIncremental = initalEnergyOnIncremental,
+      initialEnergyOnIncremental = initialEnergyOnIncremental,
 
       # layout event callbacks
       ready = ready,
@@ -125,9 +167,9 @@ fcose_layout <- function(cytoscape,
 
     # add fcose dependencies here
     if (is.null(cytoscape$dependencies)) {
-      cytoscape$dependencies <- c(numericDependency(), coseBaseDependency(), layoutBaseDependency())
+      cytoscape$dependencies <- c(fcoseDependency(), numericDependency(), coseBaseDependency(), layoutBaseDependency())
     } else {
-      cytoscape$dependencies <- c(numericDependency(), coseBaseDependency(), layoutBaseDependency())
+      cytoscape$dependencies <- c(fcoseDependency(), numericDependency(), coseBaseDependency(), layoutBaseDependency())
     }
 
     return(cytoscape)
