@@ -80,8 +80,6 @@ layoutBaseDependency <- function() {
 #' @export
 #'
 #' @examples
-
-
 fcose_layout <- function(cytoscape,
                          name = 'fcose',
                          quality = 'default',
@@ -121,7 +119,7 @@ fcose_layout <- function(cytoscape,
                         stop = htmlwidgets::JS('() => {}'),
                         ...){
 
-   layout <- list(name = 'fcose',
+   layout <- list(
        name = 'fcose',
        quality = quality,
        randomize = randomize,
@@ -169,7 +167,7 @@ fcose_layout <- function(cytoscape,
     if (is.null(cytoscape$dependencies)) {
       cytoscape$dependencies <- c(fcoseDependency(), numericDependency(), coseBaseDependency(), layoutBaseDependency())
     } else {
-      cytoscape$dependencies <- c(fcoseDependency(), numericDependency(), coseBaseDependency(), layoutBaseDependency())
+      cytoscape$dependencies <- c(fcoseDependency(), numericDependency(), coseBaseDependency(), layoutBaseDependency(), cytoscape$dependencies)
     }
 
     return(cytoscape)

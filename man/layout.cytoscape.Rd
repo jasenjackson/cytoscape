@@ -5,22 +5,55 @@
 \alias{layout.cytoscape}
 \title{Layout}
 \usage{
-layout(cytoscape, name = NULL, fit = TRUE, padding = 30,
-  boundingBox = NULL, avoidOverlap = TRUE, avoidOverlapPadding = 10,
-  nodeDimensionsIncludeLabels = FALSE, spacingFactor = NULL,
-  condense = FALSE, rows = NULL, cols = NULL, position = NULL,
-  sort = NULL, animate = FALSE, animationDuration = 500,
-  animationEasing = NULL, animateFilter = NULL, ready = NULL,
-  stop = NULL, transform = NULL, ...)
+layout(
+  cytoscape,
+  name = NULL,
+  fit = TRUE,
+  padding = 30,
+  boundingBox = NULL,
+  avoidOverlap = TRUE,
+  avoidOverlapPadding = 10,
+  nodeDimensionsIncludeLabels = FALSE,
+  spacingFactor = NULL,
+  condense = FALSE,
+  rows = NULL,
+  cols = NULL,
+  position = NULL,
+  sort = NULL,
+  animate = FALSE,
+  animationDuration = 500,
+  animationEasing = NULL,
+  animateFilter = NULL,
+  ready = NULL,
+  stop = NULL,
+  transform = NULL,
+  ...
+)
 
-\method{layout}{cytoscape}(cytoscape, name = NULL, fit = TRUE,
-  padding = 30, boundingBox = NULL, avoidOverlap = TRUE,
-  avoidOverlapPadding = 10, nodeDimensionsIncludeLabels = FALSE,
-  spacingFactor = NULL, condense = FALSE, rows = NULL, cols = NULL,
-  position = NULL, sort = NULL, animate = FALSE,
-  animationDuration = 500, animationEasing = NULL,
-  animateFilter = NULL, ready = NULL, stop = NULL,
-  transform = NULL, ...)
+\method{layout}{cytoscape}(
+  cytoscape,
+  name = NULL,
+  fit = TRUE,
+  padding = 30,
+  boundingBox = NULL,
+  avoidOverlap = TRUE,
+  avoidOverlapPadding = 10,
+  nodeDimensionsIncludeLabels = FALSE,
+  spacingFactor = NULL,
+  condense = FALSE,
+  rows = NULL,
+  cols = NULL,
+  position = NULL,
+  sort = NULL,
+  animate = FALSE,
+  animationDuration = 500,
+  animationEasing = NULL,
+  animateFilter = NULL,
+  ready = NULL,
+  stop = NULL,
+  transform = NULL,
+  ...
+)
 }
 \arguments{
 \item{cytoscape}{object}

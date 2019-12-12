@@ -11,6 +11,9 @@ edge_style(cytoscape, ...)
 
 \item{...}{additional parameters passed to the style edge object}
 }
+\value{
+
+}
 \description{
 Any recognised cytoscape style option can be passed to the node style. For available
 options see the \href{http://js.cytoscape.org/#style/edge-line}{cytoscape documentation}.

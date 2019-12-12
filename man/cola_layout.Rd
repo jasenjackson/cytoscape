@@ -4,21 +4,41 @@
 \alias{cola_layout}
 \title{Cola Layout}
 \usage{
-cola_layout(cytoscape, name = "cola", animate = TRUE, refresh = 1,
-  maxSimulationTime = 4000, ungrabifyWhileSimulating = FALSE,
-  fit = TRUE, padding = 30, boundingBox = NULL,
+cola_layout(
+  cytoscape,
+  name = "cola",
+  animate = TRUE,
+  refresh = 1,
+  maxSimulationTime = 4000,
+  ungrabifyWhileSimulating = FALSE,
+  fit = TRUE,
+  padding = 30,
+  boundingBox = NULL,
   nodeDimensionsIncludeLabels = FALSE,
   ready = htmlwidgets::JS("function(){}"),
-  stop = htmlwidgets::JS("function(){}"), randomize = FALSE,
-  avoidOverlap = TRUE, handleDisconnected = TRUE,
+  stop = htmlwidgets::JS("function(){}"),
+  randomize = FALSE,
+  avoidOverlap = TRUE,
+  handleDisconnected = TRUE,
   nodeSpacing = htmlwidgets::JS("function( node ){ return 10; }"),
-  flow = NULL, alignment = NULL, gapInequalities = NULL,
-  edgeLength = NULL, edgeSymDiffLength = NULL,
-  edgeJaccardLength = NULL, unconstrIter = NULL,
-  userConstIter = NULL, allConstIter = NULL, infinite = FALSE, ...)
+  flow = NULL,
+  alignment = NULL,
+  gapInequalities = NULL,
+  edgeLength = NULL,
+  edgeSymDiffLength = NULL,
+  edgeJaccardLength = NULL,
+  unconstrIter = NULL,
+  userConstIter = NULL,
+  allConstIter = NULL,
+  infinite = FALSE,
+  ...
+)
 }
 \arguments{
 \item{...}{}
+}
+\value{
+
 }
 \description{
 Cola Layout

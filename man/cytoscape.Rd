@@ -4,9 +4,19 @@
 \alias{cytoscape}
 \title{Cytoscape Network Chart}
 \usage{
-cytoscape(df = NULL, nodes = NULL, edges = NULL, json = NULL,
-  id = "id", source = "source", target = "target", message = NULL,
-  width = NULL, height = NULL, elementId = NULL)
+cytoscape(
+  df = NULL,
+  nodes = NULL,
+  edges = NULL,
+  json = NULL,
+  id = "id",
+  source = "source",
+  target = "target",
+  message = NULL,
+  width = NULL,
+  height = NULL,
+  elementId = NULL
+)
 }
 \arguments{
 \item{df}{data.frame or tibble}
